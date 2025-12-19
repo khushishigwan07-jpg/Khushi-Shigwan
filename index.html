@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Portfolio</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+<!-- Toggle Dark/Light Mode -->
+<div class="theme-toggle">
+    <i class="fa-solid fa-sun" id="lightIcon"></i>
+    <i class="fa-solid fa-moon" id="darkIcon"></i>
+</div>
+
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <h2 class="logo">Khushi Rajendra Shigwan</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><ahref="#academic certificates">Academic Certificates</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- HOME SECTION -->
+<section id="home" class="home">
+    <div class="home-content">
+
+        <!-- Circular Image -->
+        <div class="profile-container">
+            <img src="photos/khushi.png" alt="Khushi" class="profile-img">
+        </div>
+
+        <h1>Welcome to My Portfolio
+<span id="typing-text"></span>
+</h1>
+
+        <p>Hello! I'm Khushi Rajendra Shigwan, and this is my personal website showcasing my journey, skills, and achievements.</p>
+    </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am Khushi, a passionate learner who loves exploring creativity, technology, and personal growth.
+        This portfolio reflects my dedication, accomplishments, and dreams.I am a first year Computer engineering student studying at Fr. Conceicao Rodrigues College of Engineering(Bandra).
+    </p>
+     <p>I completed my school education from St.Soldier Public School(Bhayander east) and got my hsc degree from Sardar Vallabhbhai Patel junior college of Science and Commerce.
+         I successfully completed six years course in Bharatnatyam classical dance and I hold a brown belt in Karate. 
+      </p>
+</section>
+<!-- SKILLS SECTION -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress"><div style="width: 95%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress"><div style="width: 90%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress"><div style="width: 80%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>C Programming</p>
+            <div class="progress"><div style="width: 85%"></div></div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- HOBBIES SECTION -->
+<section id="hobbies" class="hobbies">
+    <h2>My Hobbies</h2>
+
+    <ul class="hobby-list">
+        <li><i class="fa-solid fa-book"></i> Reading motivational books</li>
+        <li><i class="fa-solid fa-paintbrush"></i> Drawing & Art</li>
+        <li><i class="fa-solid fa-music"></i> Listening to music</li>
+        <li><i class="fa-solid fa-person-running"></i> Exercise & Fitness</li>
+        <li><i class="fa-solid fa-laptop-code"></i> Learning new Technical Skills</li>
+    </ul>
+</section>
+
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+        <img src="photos/image1.jpg" class="clickable-img" alt="Image 1">
+        <img src="photos/image2.jpg" class="clickable-img" alt="Image 2">
+        <img src="photos/image3.jpg" class="clickable-img" alt="Image 3">
+        <img src="photos/image4.jpg" class="clickable-img" alt="Image 4">
+        <img src="photos/image5.jpg"  class="clickable-img" alt="Image 5">
+        <img src="photos/image6.jpg" class="clickable-img" alt="Image 6">
+    </div>
+
+    
+</section>
+
+
+<!-- CERTIFICATE SECTION -->
+<section id="certificates" class="certificates">
+    <h2>Certificates</h2>
+
+    <div class="carousel">
+        <div class="carousel-container">
+            <img src="cert/1.jpg"  class="cert-img clickable-img" alt="">
+            <img src="cert/2.jpg"  class="cert-img clickable-img" alt="">
+            <img src="cert/3.jpg"  class="cert-img clickable-img" alt="">
+            <img src="cert/4.jpg"  class="cert-img clickable-img" alt="">
+            <img src="cert/5.jpg"  class="cert-img clickable-img" alt="">
+            <img src="cert/6.jpg"  class="cert-img clickable-img" alt="">
+             <img src="cert/7.png"  class="cert-img clickable-img" alt="">
+             <img src="cert/8.png"  class="cert-img clickable-img" alt="">
+</div>
+    </div>
+</section>
+<!-- Academic Certificates Section-->
+<section id="academic-certificates" class"academic certifiactes">
+<h2>Academic Certificates</h2>
+<div class="academic-grid">
+<img src="matlab/1.jpg" alt="Academic Certificate 1" class="academic-img clickable-img">
+        <img src="matlab/2.jpg" alt="Academic Certificate 2" class="academic-img clickable-img">
+        <img src="matlab/3.jpg" alt="Academic Certificate 3" class="academic-img clickable-img">
+        <img src="matlab/4.jpg" alt="Academic Certificate 4" class="academic-img clickable-img">
+    </div>
+</section>
+<!-- Image Popup Modal -->
+<div id="imgModal" class="img-modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm"
+          action="https://formspree.io/f/meoynzzb"
+          method="POST">
+
+        <input type="email"
+               name="email"
+               placeholder="Your Email"
+               required>
+
+        <textarea name="message"
+                  placeholder="Write your message..."
+                  required></textarea>
+
+        <!-- Optional hidden field -->
+        <input type="hidden" name="_subject" value="New message from portfolio">
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- SUCCESS POPUP -->
+<div id="success-popup">
+    <div class="popup-box">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>Message Sent!</h3>
+        <p>Your message has been successfully submitted.</p>
+        <button id="close-popup">OK</button>
+    </div>
+</div>
+
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/srkhushi07?igsh=cHo2a3FjeW5uc2o0"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/khushi-shigwan-13449b393?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/khushishigwan07-jpg"><i class="fa-brands fa-github"></i></a>
+    </div>
+</section>
+
+
+<!-- Scroll To Top Button -->
+<button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Khushi Rajendra Shigwan. All rights reserved.</p>
+</footer>
+
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

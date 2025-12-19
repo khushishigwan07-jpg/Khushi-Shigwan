@@ -1,0 +1,471 @@
+/* ---------------------------------------------------
+   RESET & BASIC STYLES
+--------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    transition: background 0.3s, color 0.3s;
+}
+
+.light {
+    background: #ffffff;
+    color: #222;
+}
+
+.dark {
+    background: #121212;
+    color: #e5e5e5;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ---------------------------------------------------
+   NAVBAR
+--------------------------------------------------- */
+header {
+    width: 100%;
+    background: #ff6600;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/* ---------------------------------------------------
+   HOME SECTION
+--------------------------------------------------- */
+.home {
+    padding-top: 120px;
+    text-align: center;
+}
+#typing-text {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 30px;
+    border-right: 3px solid #ff6600;
+    padding-right: 5px;
+    animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff6600;
+}
+
+.home h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.home p {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* ---------------------------------------------------
+   ABOUT SECTION
+--------------------------------------------------- */
+section {
+    padding: 70px 8%;
+}
+
+.about p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+/* SKILLS */
+.skill {
+    margin: 15px 0;
+}
+
+.progress {
+    background: #ddd;
+    height: 12px;
+    border-radius: 10px;
+}
+
+.progress div {
+    height: 100%;
+    background: #ff6b81;
+    border-radius: 10px;
+}
+/* ---------------------------------------------------
+   HOBBIES SECTION
+--------------------------------------------------- */
+.hobby-list {
+    list-style: none;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.hobby-list li {
+    padding: 10px 0;
+}
+
+.hobby-list i {
+    color: #ff6600;
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------
+   GALLERY
+--------------------------------------------------- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+.note {
+    margin-top: 15px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+/* ---------------------------------------------------
+   CERTIFICATES (CIRCULAR CAROUSEL)
+--------------------------------------------------- */
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    animation: slide 12s infinite linear;
+}
+
+.cert-img {
+    width: 280px;
+    height: 180px;
+    object-fit: contain; 
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    display: block;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+/* Academic Certificates Section */
+#academic-certificates {
+    padding: 60px 20px;
+    
+}
+
+#academic-certificates h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.academic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Certificate Images */
+.academic-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 2px solid #7a3cff;
+    box-shadow: 0 0 15px rgba(122, 60, 255, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.academic-img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Background */
+.img-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enlarged Image */
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ff6600;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    resize: none;
+    height: 120px;
+}
+
+#contactForm button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    opacity: 0.9;
+}
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 28px;
+    color: #ff6600;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.6;
+}
+
+/* ---------------------------------------------------
+   SUCCESS POPUP
+--------------------------------------------------- */
+#success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.popup-box {
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    animation: popUp 0.3s ease;
+}
+
+.popup-box i {
+    font-size: 55px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+#close-popup {
+    background: #ff6600;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@keyframes popUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ---------------------------------------------------
+   SCROLL TO TOP BUTTON
+--------------------------------------------------- */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 12px 15px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    z-index: 1200;
+}
+
+/* ---------------------------------------------------
+   LOADER
+--------------------------------------------------- */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transition: opacity 0.7s ease;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ff6600;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ---------------------------------------------------
+   DARK MODE ICON STYLES
+--------------------------------------------------- */
+.theme-toggle {
+    position: fixed;
+    right: 20px;
+    top: 90px;
+    z-index: 1500;
+}
+
+.theme-toggle i {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.light #darkIcon {
+    display: block;
+}
+
+.dark #lightIcon {
+    display: block;
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE DESIGN
+--------------------------------------------------- */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+}
